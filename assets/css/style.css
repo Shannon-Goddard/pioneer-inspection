@@ -213,6 +213,15 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  #hero {
+    background-attachment: scroll;
+    background-position: center center;
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
 #hero .container {
   padding-top: 80px;
   text-align: center;
@@ -273,10 +282,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  #hero { height: auto; padding-bottom: 40px; }
-  #hero h1 { font-size: 28px; line-height: 36px; }
-  #hero h2 { font-size: 18px; line-height: 24px; }
-  #hero .icon-box { margin-bottom: 20px; }
+  #hero { 
+    height: auto; 
+    padding: 80px 0 40px 0;
+    background-attachment: scroll;
+  }
+  #hero h1 { 
+    font-size: 32px; 
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  #hero h2 { 
+    font-size: 18px; 
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  #hero .icon-box { 
+    margin-bottom: 20px;
+    padding: 25px 15px;
+  }
+  #hero .container {
+    padding-top: 40px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -285,6 +312,29 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# Counts Section
+--------------------------------------------------------------*/
+.counts .image {
+  background: url('../img/inspection-team.jpg') center center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .counts .image {
+    min-height: 250px;
+    background-position: center center;
+    margin-bottom: 30px;
+  }
+  
+  .counts .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .section-bg {
@@ -310,6 +360,22 @@ section {
   font-size: 24px;
   font-weight: 700;
   color: #003087;
+}
+
+/*--------------------------------------------------------------
+# Industrial Background
+--------------------------------------------------------------*/
+.industrial-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/industrial.jpg') center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .industrial-bg {
+    background-attachment: scroll;
+    background-position: center center;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -372,6 +438,25 @@ section {
   background-attachment: fixed;
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .cta {
+    background-attachment: scroll;
+    background-position: center center;
+    min-height: 50vh;
+    padding: 60px 0;
+  }
+  
+  .cta h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .cta p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -470,6 +555,75 @@ section {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.services .portfolio-wrap:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/oil-gas-bg.jpg") center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 0;
+}
+
+.testimonials .testimonial-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    background-attachment: scroll;
+    background-position: center center;
+    padding: 60px 0;
+  }
+  
+  .testimonials .testimonial-item {
+    padding: 25px 20px;
+    margin: 15px 0;
+  }
+  
+  .testimonials .testimonial-item p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .testimonials .testimonial-item h3 {
+    font-size: 16px;
+  }
+  
+  .testimonials .testimonial-item h4 {
+    font-size: 13px;
+  }
 }
 
 .services .portfolio-wrap:hover img {
