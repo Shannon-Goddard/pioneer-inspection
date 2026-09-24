@@ -5,6 +5,9 @@
 **Built by:** Shannon & Amazon Q  
 **For:** Brian Ayotte, Owner — Pioneer Inspection LLC
 
+**Live preview:** [https://shannon-goddard.github.io/pioneer-inspection/](https://shannon-goddard.github.io/pioneer-inspection/)  
+**GitHub repo:** [https://github.com/Shannon-Goddard/pioneer-inspection](https://github.com/Shannon-Goddard/pioneer-inspection)
+
 ---
 
 ## What is HTML, CSS, and JavaScript?
