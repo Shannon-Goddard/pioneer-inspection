@@ -1,0 +1,10 @@
+# Keep private notes out of the public repo
+chat.txt
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
