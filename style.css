@@ -641,3 +641,163 @@ footer .link-list li a:hover { color: var(--default-color); padding-left: 5px; t
   .footer-bottom .footer-links { justify-content: flex-start; margin-top: 10px; }
   .footer-bottom .row { flex-direction: column; }
 }
+
+/* ============================================================
+   16. Service Pages (page-banner, sidebar, detail layout)
+   ============================================================ */
+
+/* Page Banner — the dark hero strip at the top of service pages */
+.page-banner {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 80px 0;
+  text-align: center;
+}
+.page-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 33, 96, 0.82);
+}
+.page-banner .container { position: relative; z-index: 1; }
+.page-banner h1 {
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+}
+.breadcrumb a { color: rgba(255,255,255,0.7); }
+.breadcrumb a:hover { color: var(--default-color); }
+.breadcrumb span { color: rgba(255,255,255,0.5); }
+
+/* Service detail area wrapper */
+.services-details-area { padding: 70px 0; }
+
+.services-details-items .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Sidebar — left column */
+.services-sidebar {
+  flex: 0 0 280px;
+  max-width: 280px;
+}
+
+.sidebar-widget {
+  background: #f8f9fc;
+  border-radius: 6px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar-widget h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--default-color);
+  color: #232323;
+}
+
+/* Services list in sidebar */
+.services-list { list-style: none; margin: 0; padding: 0; }
+.services-list li a {
+  display: block;
+  padding: 12px 20px;
+  background: #fff;
+  color: #444;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+  transition: all 0.25s;
+}
+.services-list li a::after {
+  content: "\f105";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+.services-list li a:hover,
+.services-list li.active a {
+  background: var(--default-color);
+  color: #fff;
+  padding-left: 25px;
+}
+.services-list li a:hover::after,
+.services-list li.active a::after { color: #fff; }
+
+/* Sidebar contact widget */
+.sidebar-contact {
+  background: var(--sec-color);
+  text-align: center;
+}
+.sidebar-contact i {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 15px;
+  display: block;
+}
+.sidebar-contact h4 { color: #fff; border-bottom-color: rgba(255,255,255,0.2); }
+.sidebar-contact p { color: rgba(255,255,255,0.7); margin-bottom: 10px; }
+.sidebar-contact a {
+  display: inline-block;
+  color: var(--default-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+.sidebar-contact a:hover { color: #fff; }
+
+/* Main content — right column */
+.services-single-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.services-single-content img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.services-single-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #232323;
+}
+
+.services-single-content p {
+  color: #666;
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+
+.services-single-content .btn { margin-top: 10px; }
+
+/* Responsive: stack sidebar above content on smaller screens */
+@media (max-width: 900px) {
+  .services-sidebar {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .services-details-items .row { gap: 30px; }
+  .page-banner h1 { font-size: 30px; }
+}
