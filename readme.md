@@ -107,6 +107,11 @@ const SLIDE_INTERVAL = 5000; // milliseconds (5000 = 5 seconds)
 - [x] paving-inspections.html — Ghost page, fully built, not in nav
 - [x] Every page on the site has a working destination — no dead ends
 
+### Legal Pages Note (pending Brian's input)
+Terms & Conditions and Privacy Policy pages are built and live. The current content is standard boilerplate appropriate for a small inspection business. Brian should review and confirm two things before launch:
+- **Terms & Conditions** — currently covers "use at your own risk, no liability" standard language. If Brian wants to add anything specific (e.g. service agreements, payment terms, warranty language), the content is in `terms.html` under each numbered section.
+- **Privacy Policy** — currently states the site collects only contact form submissions, no cookies, no tracking, no analytics. If Brian plans to add Google Analytics or any other tracking tool later, Section 6 of `privacy.html` will need to be updated to reflect that.
+
 ### Ghost Page Note — paving-inspections.html
 The original `road-repair-work.jpg` only existed on the old WordPress server and wasn't saved locally. The page is currently using `pipes-1920.jpg` as a placeholder. There's a comment right above the `<img>` tag in `paving-inspections.html` explaining exactly what to swap when Brian has a paving photo ready.
 
