@@ -1,0 +1,60 @@
+That’s perfect. Let’s write a readme.md before we touch the other files. The end game of what we are doing (me and you;Amazon Q) recreating his website https://www.pioneerinspection.com with basic HTML, CSS, and js. A brief description of how HTML is like the human body; some are tall and skinny. CSS would be dressing the body with blue jeans and a white shirt. While js would be giving it action, like waving or jumping. If you have a better brief way to describe those, go for it. Each page will be heavily noted with what it represents on the page and how to implement changes. Note: These images are broken and not available for me to use https://rainmakers.digital/pioneerinspection/wp-content/uploads/2022/12/IMG_9100.jpg and https://rainmakers.digital/pioneerinspection/wp-content/uploads/2022/08/1.png
+
+Then, I will make all changes asked for via email. Along with Best Practices, like security headers and SEO for Google Search results:
+
+
+Ashley Chamberland <Chamberlanda@pioneerinspection.com>
+	Fri, Sep 18, 10:49 AM (6 days ago)		
+to me, Brian
+ 
+	
+Hi Shannon,
+
+Here are the items we are looking to update to start:
+
+•	Remove Steve Nimblet & Dallas Lane from Meet the Team Tab (we will want to add a group photo)
+•	Remove NETTCP Paving Inspection Page from Services Tab
+•	Remove existing images & we can replace with our own images
+•	Contact us tab - add company address: 384 Eliot Dow Hwy Unit #21, Eliot ME
+•	Replace contact us email to chamberlanda@pioneerinspection.com
+•	Ensure all items are loading correctly / currently some items not loading and lag times
+
+Link to the website: https://www.pioneerinspection.com/
+
+Thank you,
+Ashley Chamberland
+Administrative Assistant
+ 
+ 
+Brian Ayotte <ayotteb@pioneerinspection.com>
+	Mon, Sep 21, 7:43 AM (3 days ago)		
+to Ashley, me
+ 
+	
+Hi Shannon!
+ 
+I know it makes some time since we last spoke but now that I have things running a little bit smoother on my end I feel like its time to revisit this item. I also wanted to apologize for not taking the time to formally introduce you and Ashley but that fell off my radar last week as I made a last-minute decision to head to NC with a friend.
+ 
+To elaborate on Ashleys previous notes (In Red),  
+ 
+•	Remove Steve Nimblet & Dallas Lane from Meet the Team Tab (we will want to add a group photo) Those individuals no longer work for me. I am not sure when I can get around to coordinating the photo of the entire group. It may be around the Thanksgiving timeframe.
+•	Remove NETTCP Paving Inspection Page from Services Tab (Please make this a ghost page for now, I had individuals qualified on this at one time but I am not chasing this work at the moment but still want the page available to insert into the website at a later date if I choose to do so)
+•	Remove existing images & we can replace with our own images (Is there a way to determine which pictures are trademarked on the website? Obviously the pictures I paid a photographer for are fine for me to use but except for a few others I think all the photos were from a photo bank that the last website creator had paid for.
+•	Contact us tab - add company address: 384 Eliot Dow Hwy Unit #21, Eliot ME  384 Dow Hwy Unit #21 Eliot, Me 03903
+•	Replace contact us email to chamberlanda@pioneerinspection.com
+•	Ensure all items are loading correctly / currently some items not loading and lag times I am fine with simplifying things down a notch to improve functionality of the website over wow factor, but I did like the website as it was originally created. Biggest thing would be to have the ability to go in there and make edits on a yearly basis.
+ 
+Hope all is well; I am excited to work together and get the ball rolling on this!
+Kind regards,
+Brian Ayotte | Owner
+Phone: (207)-949-4224
+ 
+
+
+I will make a checklist here on this readme.md and check off as each change is done.
+
+Then, when you are happy with the website, I will show you how to setup a GitHub account. It’s like the Facebook for developers, but cooler. I will have you copy/paste this code so you can make changes whenever you want. Also, as long as the code is public, Github will host your website free. The domain will be wonky like the one I’m working with to get us started. BUT…
+
+The final thing will be for us to do what’s called a “redirect” and have it point to your domain https://www.pioneerinspection.com I just need to know you your domain provider is to give you direction on that.
+
+After we’re done, your only website cost will be whatever you pay for your domain. If it’s more than $50 a year, I will highly recommend you go to Square Space and get a new one for $20-$50 a year.

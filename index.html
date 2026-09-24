@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  Pioneer Inspection - index.html
+  ============================================================
+  HOW TO EDIT THIS FILE:
+  - Navigation links: Find the <nav> section and edit the <a href="..."> tags
+  - Hero text: Find <!-- HERO SLIDER --> and edit the h1 / .tag text
+  - About text: Find <!-- ABOUT --> and edit the paragraphs
+  - Services: Find <!-- SERVICES --> and edit each .service-card block
+  - Team members: Find <!-- TEAM --> and edit each .team-card block
+    - To change a photo: update the src="assets/img/FILENAME.jpg"
+    - To change a name/title: edit the <h4> and <span> inside .info
+  - Testimonial: Find <!-- TESTIMONIALS --> and edit the quote and author
+  - Footer: Find <!-- FOOTER --> and edit contact info / links
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pioneer Inspection LLC — Natural gas inspection services for oil and gas industries in New England.">
+  <title>Home - Pioneer Inspection</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Our stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     To add a menu item: copy a <li> and change the href and text
+     To add a dropdown: add class="has-dropdown" to the <li>
+     ============================================================ -->
+<header id="home">
+  <div class="wrap-sticky">
+    <nav class="navbar">
+      <div class="container">
+
+        <!-- Logo — change the src to swap the logo image -->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo.png" alt="Pioneer Inspection">
+        </a>
+
+        <!-- Mobile hamburger button -->
+        <button class="navbar-toggle" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Nav links -->
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+              <a href="#">Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="service/oq-inspections.html">OQ Inspections</a></li>
+                <li><a href="service/cwi-inspections.html">CWI Inspections</a></li>
+                <!-- NETTCP Paving Inspections removed from nav per Brian's request.
+                     The page still exists at service/paving-inspections.html (ghost page).
+                     To add it back: uncomment the line below. -->
+                <!-- <li><a href="service/paving-inspections.html">NETTCP Paving Inspections</a></li> -->
+                <li><a href="service/project-management.html">Project Management</a></li>
+              </ul>
+            </li>
+            <li><a href="team-carousel.html">Meet the Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     HERO SLIDER
+     To change the background image: edit background-image: url(...)
+     To add a slide: copy a <div class="slide"> block and paste it
+     To change slide text: edit the <h1> and .tag text
+     ============================================================ -->
+<section class="hero-slider" aria-label="Hero Slider">
+
+  <div class="slide" style="background-image: url('assets/img/pipes-1920.jpg');">
+    <div class="slide-content">
+      <span class="tag">Pioneer Inspection</span>
+      <h1>Inspection Services for Oil and Gas Industries</h1>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image: url('assets/img/photo-technician-engineer.jpg');">
+    <div class="slide-content">
+      <span class="tag">Pioneer Inspection</span>
+      <h1>Trusted Experts in Natural Gas Inspections</h1>
+    </div>
+  </div>
+
+  <!-- Prev / Next arrows -->
+  <button class="slider-arrow prev" aria-label="Previous slide">&#8249;</button>
+  <button class="slider-arrow next" aria-label="Next slide">&#8250;</button>
+
+  <!-- Dot indicators -->
+  <div class="slider-dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     ABOUT
+     Edit the paragraphs and phone number below
+     ============================================================ -->
+<section class="about-area">
+  <div class="container">
+    <div class="row align-center">
+
+      <!-- Left: photo -->
+      <div class="col-lg-6">
+        <div class="thumb-left">
+          <div class="thumb">
+            <img src="assets/img/IMG_9115.jpg" alt="Pioneer Inspection team at work">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: text -->
+      <div class="col-lg-6 info">
+        <h2><b>Welcome to Pioneer Inspection, your New England oil and gas piping professionals.</b></h2>
+
+        <p>Our Inspectors have a broad range of experience and strive to deliver the highest quality assurance and quality control in the industry.</p>
+        <p>We are a Service-Disabled Veteran Owned company specializing in natural gas inspections for residential, commercial and industrial needs.</p>
+        <p>At Pioneer Inspection, we understand the importance of ensuring that all system piping and components meet the highest standards of safety and efficiency, and we are committed to providing our customers with the best possible service.</p>
+        <p>We go beyond our competition ensuring the satisfaction of our customers is met before, during, and after construction.</p>
+        <p><b>Forged with Integrity — Pioneer Inspection LLC</b></p>
+
+        <div class="bottom">
+          <div class="call">
+            <div class="icon">
+              <!-- To change the phone number: edit both the href="tel:..." and the <h4> text -->
+              <a href="tel:2079494224">
+                <i class="fas fa-phone-alt"></i>
+                <div class="contact">
+                  <h4>(207)-949-4224</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="button">
+            <a class="btn btn-theme" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SCHEDULE CALL BANNER
+     Edit the text and the Calendly link (href="https://calendly.com/...")
+     ============================================================ -->
+<section class="cta-banner">
+  <div class="container">
+    <h3>Schedule Exploratory Call</h3>
+    <div class="cta-inner">
+      <p>Ensure the safety and efficiency of your oil and gas piping systems.<br>
+         Book an exploratory call with Pioneer Inspection today and let us show you why we are the trusted experts in natural gas inspections.</p>
+      <!-- To change the booking link: update href="https://calendly.com/..." -->
+      <a class="btn-calendar" href="https://calendly.com/ayotteb" target="_blank" rel="noopener">
+        <i class="far fa-calendar-alt"></i>
+        Click here to schedule your Exploratory Call
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SERVICES
+     To edit a service card: find the matching .service-card and
+     change the image src, title, description, and href links.
+     To add a service: copy a .service-card block and paste it.
+     ============================================================ -->
+<section class="services-area">
+  <div class="container">
+    <h2>One supplier for all your inspection needs</h2>
+    <p>We provide a full range of inspection, testing, and project management services that go far beyond the industry standard.</p>
+
+    <div class="services-grid">
+
+      <!-- Service 1 -->
+      <div class="service-card">
+        <div class="thumb">
+          <img src="assets/img/service-worker4.jpg" alt="OQ Inspections">
+        </div>
+        <div class="info">
+          <i class="flaticon-factory-1 fas fa-industry"></i>
+          <h4><a href="service/oq-inspections.html">OQ Inspections</a></h4>
+          <p>Pioneer Inspections is the leading provider of operational qualification inspections for natural gas systems in Maine.</p>
+          <a class="read-more" href="service/oq-inspections.html">Read More <i class="fas fa-plus"></i></a>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <div class="thumb">
+          <img src="assets/img/photo-technician-engineer.jpg" alt="CWI Inspections">
+        </div>
+        <div class="info">
+          <i class="fas fa-hard-hat"></i>
+          <h4><a href="service/cwi-inspections.html">CWI Inspections</a></h4>
+          <p>When you need to ensure that weldments meet code requirements or other acceptance criteria you need an AWS Certified Welding Inspector.</p>
+          <a class="read-more" href="service/cwi-inspections.html">Read More <i class="fas fa-plus"></i></a>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <div class="thumb">
+          <img src="assets/img/service-rafinery2.jpg" alt="Project Management">
+        </div>
+        <div class="info">
+          <i class="fas fa-tasks"></i>
+          <h4><a href="service/project-management.html">Project Management</a></h4>
+          <p>At Pioneer Inspection, we have years of experience in the natural gas industry and have managed numerous projects for clients.</p>
+          <a class="read-more" href="service/project-management.html">Read More <i class="fas fa-plus"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     STATS / CONSULTING BANNER
+     Edit the numbers, labels, and the background image URL
+     ============================================================ -->
+<section class="consulting-area">
+  <div class="container">
+    <div class="row align-center">
+
+      <div class="col-lg-6 left-info">
+        <h4>Need a reliable natural gas inspection service?</h4>
+        <p>Contact us today, we're happy to help.</p>
+        <div class="stats">
+          <!-- Stat 1 — change the number and label -->
+          <div class="stat-item">
+            <div class="number">23<span>+</span></div>
+            <p>Years of our Team's Experience</p>
+          </div>
+          <!-- Stat 2 -->
+          <div class="stat-item">
+            <div class="number">100<span>%</span></div>
+            <p>Reliable</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="right-info" style="background-image: url('assets/img/service-rafinery2.jpg');">
+          <a class="btn btn-light" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     INFO SECTIONS (alternating text + image)
+     Edit the heading, paragraphs, and image src in each block
+     ============================================================ -->
+<section class="info-section">
+  <div class="container">
+    <div class="row align-center">
+      <div class="col-lg-6">
+        <h3>We're Natural Gas Specialists</h3>
+        <p>Our team of experienced natural gas experts at Pioneer Inspection is dedicated to providing the highest quality services for our clients.</p>
+        <p>We have many years of experience dealing with all aspects of natural gas inspections, from initial installation to regular inspections and maintenance.</p>
+        <p>We are well-versed in local and national codes and regulations, and we will make sure your natural gas systems are up to date and in compliance.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="assets/img/service-worker1.jpg" alt="Natural gas specialist at work">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="container">
+    <div class="row align-center">
+      <div class="col-lg-6">
+        <img src="assets/img/service-supervisor.jpg" alt="Professional team">
+      </div>
+      <div class="col-lg-6">
+        <h3>Professional team, personal approach</h3>
+        <p>We employ motivated individuals that value professional development which directly benefits our growing list of customers.</p>
+        <p>Our goal is to provide a culture where everyone strives to be the best form of themselves that they can be by promoting a healthy lifestyle and a healthy workplace.</p>
+        <p>With our team, you can rest easy knowing that your next project is in good hands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="container">
+    <div class="row align-center">
+      <div class="col-lg-6">
+        <h3>Servicing New England area</h3>
+        <p>At Pioneer Inspection, we have been providing professional and reliable natural gas inspection services in New England since 2018.</p>
+        <p>Our experienced and certified technicians are well equipped to test and inspect all types of residential and commercial natural gas systems.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="assets/img/IMG_9115.jpg" alt="New England service area">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="container">
+    <div class="row align-center">
+      <div class="col-lg-6">
+        <img src="assets/img/7-q5v8zsdu2iby5gy4fgzmuyz31yj0mvv189vcagad8o.jpg" alt="Less stress, better quality">
+      </div>
+      <div class="col-lg-6">
+        <h3>Working with us means less stress &amp; better quality</h3>
+        <p>When it comes to oil and gas related inspections, you want a company that you can trust to get the job done right.</p>
+        <p>Working with us means less stress and better quality when it comes to managing piping systems as well as customers and contractors.</p>
+        <p>With top-of-the-line equipment and decades of experience, you can rest assured that your inspection is in good hands.</p>
+        <p><strong>Find out why we are the better choice.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     TEAM
+     To edit a team member:
+       - Change src="assets/img/PHOTO.jpg" for their photo
+       - Change the <h4> for their name
+       - Change the <span> for their title
+       - Change href="https://www.linkedin.com/in/..." for their LinkedIn
+     To hide the LinkedIn icon: delete the <a> tag inside .social
+     ============================================================ -->
+<section class="team-area">
+  <div class="container">
+    <div class="site-heading text-center">
+      <h2>Meet our Experts</h2>
+    </div>
+
+    <div class="team-grid">
+
+      <!-- Team Member 1: Brian -->
+      <div class="team-card">
+        <div class="thumb">
+          <img src="assets/img/Brian-NZ90117-600x700-1.jpg" alt="Brian Ayotte">
+          <div class="overlay text-light">
+            <h4>Brian Ayotte</h4>
+            <div class="social">
+              <!-- LinkedIn link — update href to Brian's profile -->
+              <a href="https://www.linkedin.com/in/brian-ayotte-03336260/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <h4>Brian Ayotte</h4>
+          <span>Owner</span>
+        </div>
+      </div>
+
+      <!-- Team Member 2 & 3: Steve Nimblett and Dallas Lane removed per Brian's request (Sep 2024).
+           A group photo will be added here around Thanksgiving.
+           To add a group photo: replace the comment below with a new .team-card block
+           or a full-width <img> tag. -->
+
+      <!-- GROUP PHOTO PLACEHOLDER — add photo here when ready
+      <div class="team-card" style="grid-column: span 2;">
+        <div class="thumb">
+          <img src="assets/img/team-group-photo.jpg" alt="Pioneer Inspection Team">
+        </div>
+        <div class="info">
+          <h4>The Pioneer Inspection Team</h4>
+          <span>Your trusted inspection professionals</span>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     TESTIMONIALS
+     To edit the testimonial: change the <p> quote and <h5> author name
+     To add more testimonials: copy the .testimonial-card block
+     ============================================================ -->
+<section class="testimonials-area">
+  <div class="container">
+    <div class="row align-center">
+
+      <div class="col-lg-5 stat-col text-center">
+        <!-- Change the number and label below -->
+        <h1>731</h1>
+        <h2>Inspected Projects</h2>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- Edit the quote text here -->
+          <p>"Your ability to focus on priorities and capture the details makes you an invaluable member of the Inspection Team in support of our Gas Distribution Work; and I can't be more thrilled with the two additional Staff members you brought over the last few Seasons. Quality individuals with the same focus and values. Love working with you all."</p>
+          <div class="author">
+            <!-- Edit the reviewer's name here -->
+            <h5>Brian Sullivan</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     Edit contact info, service links, and copyright below
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="row">
+
+      <!-- Contact info column -->
+      <div class="col-lg-4 col-md-6" style="margin-bottom:40px;">
+        <h4>Contact Us</h4>
+        <p>Pioneer Inspection LLC</p>
+        <ul class="contact-list">
+          <!-- Edit address, email, and phone here -->
+          <li><i class="fas fa-map-marker-alt"></i> Bangor, ME</li>
+          <li><i class="fas fa-envelope-open"></i>
+            <!-- Contact email updated per Ashley's request -->
+            <a href="mailto:chamberlanda@pioneerinspection.com">chamberlanda@pioneerinspection.com</a>
+          </li>
+          <li><i class="fas fa-phone-alt"></i>
+            <a href="tel:2079494224">(207)-949-4224</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Services links column -->
+      <div class="col-lg-2 col-md-6" style="margin-bottom:40px;">
+        <h4>Services</h4>
+        <ul class="link-list">
+          <li><a href="service/oq-inspections.html">OQ Inspections</a></li>
+          <li><a href="service/cwi-inspections.html">CWI Inspections</a></li>
+          <li><a href="service/paving-inspections.html">NETTCP Paving Inspections</a></li>
+          <li><a href="service/project-management.html">Project Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Useful links column -->
+      <div class="col-lg-2 col-md-6" style="margin-bottom:40px;">
+        <h4>Useful Links</h4>
+        <ul class="link-list">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="team-carousel.html">Meet the Team</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer bottom bar -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- Edit the copyright year/name here -->
+          <p>&copy; 2025 Pioneer Inspection LLC. All rights reserved.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="footer-links">
+            <!-- Add or remove footer legal links here -->
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Our JavaScript (slider + mobile nav) -->
+<script src="main.js"></script>
+
+</body>
+</html>
