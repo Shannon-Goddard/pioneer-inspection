@@ -40,10 +40,10 @@ pioneer/
 │       ├── pipes-1920.jpg
 │       └── ... (more images)
 └── service/
-    ├── oq-inspections.html
-    ├── cwi-inspections.html
-    ├── paving-inspections.html  ← Ghost page (hidden from nav, kept for later)
-    └── project-management.html
+    ├── oq-inspections.html       ← Operator Qualification (service-worker4.jpg)
+    ├── cwi-inspections.html      ← Certified Welding Inspectors (photo-technician-engineer.jpg)
+    ├── project-management.html   ← Responsible Project Management (service-rafinery2.jpg)
+    └── paving-inspections.html   ← Ghost page — not in nav, pipes-1920.jpg placeholder (see note below)
 ```
 
 ---
@@ -99,6 +99,23 @@ const SLIDE_INTERVAL = 5000; // milliseconds (5000 = 5 seconds)
 - [x] Fix broken images (removed references to rainmakers.digital URLs)
 - [x] Improve load times (removed WordPress/Elementor/plugin overhead entirely)
 
+### Service Pages
+
+- [x] oq-inspections.html — Operator Qualification, fully built
+- [x] cwi-inspections.html — Certified Welding Inspectors, fully built
+- [x] project-management.html — Responsible Project Management, fully built
+- [x] paving-inspections.html — Ghost page, fully built, not in nav
+- [x] Every page on the site has a working destination — no dead ends
+
+### Ghost Page Note — paving-inspections.html
+The original `road-repair-work.jpg` only existed on the old WordPress server and wasn't saved locally. The page is currently using `pipes-1920.jpg` as a placeholder. There's a comment right above the `<img>` tag in `paving-inspections.html` explaining exactly what to swap when Brian has a paving photo ready.
+
+To restore paving to the nav when the time comes, search any page for this comment and uncomment the line below it:
+```html
+<!-- GHOST PAGE: uncomment the line below to restore Paving to the nav -->
+<!-- <li><a href="paving-inspections.html">NETTCP Paving Inspections</a></li> -->
+```
+
 ### Image Note
 The images currently in `assets/img/` that came from the original site may include stock photos from a photo bank the previous developer paid for. **Before publishing**, replace any photos you're unsure about with:
 - Photos Brian paid a photographer for ✅ (safe to use)
@@ -117,6 +134,15 @@ The images currently in `assets/img/` that came from the original site may inclu
 - [x] No external tracking scripts — faster load, better privacy
 - [ ] Add security headers when hosted (X-Frame-Options, Content-Security-Policy) — done at the hosting/GitHub level
 - [ ] Submit sitemap to Google Search Console after launch
+
+### SEO & Social Sharing (pending Brian's input)
+
+- [ ] **Open Graph tags** — controls how the site looks when shared on Facebook, LinkedIn, iMessage, etc. (the image + title + description preview card). Needs a preferred share image from Brian — can use `pipes-1920.jpg` as placeholder in the meantime.
+- [ ] **Twitter/iMessage card tags** — same idea, different platform. Done at the same time as Open Graph, takes 5 minutes.
+- [ ] **Schema.org LocalBusiness JSON-LD** — tells Google this is a local business. Unlocks rich search results (star ratings, address, phone directly in Google). Need from Brian:
+  - Preferred business category (e.g. "Oil & Gas Inspector")
+  - Confirmation of address, phone, email (already have these — just need Brian to confirm they're final)
+- [ ] **Google Business Profile** — the single biggest thing Brian can do for local search. Free, ~20 minutes to set up at [business.google.com](https://business.google.com). Puts Pioneer Inspection on Google Maps with reviews. Brian needs to create/claim this himself.
 
 ---
 
