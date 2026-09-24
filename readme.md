@@ -120,6 +120,25 @@ The images currently in `assets/img/` that came from the original site may inclu
 
 ---
 
+## Contact Form Setup (One-Time, Free)
+
+**[👉 Preview the Contact Page](https://shannon-goddard.github.io/pioneer-inspection/contact.html)**
+
+The contact form is built and ready — it just needs to be connected to an email inbox. Here's how:
+
+1. Go to **[formspree.io](https://formspree.io)** and create a free account
+2. Click **New Form**, give it a name (e.g. "Pioneer Inspection Contact")
+3. You'll get a URL that looks like `https://formspree.io/f/abcd1234`
+4. Open `contact.html`, find this line near the top of the `<form>` tag:
+   ```html
+   <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+   ```
+5. Replace `YOUR_FORM_ID` with the ID from your Formspree URL
+
+That's it. The free tier handles **50 submissions/month** — more than enough for a business like Pioneer Inspection. When someone fills out the form, the message lands directly in Ashley's inbox.
+
+---
+
 ## The Road to Launch
 
 Here's the plan once the site looks good:
