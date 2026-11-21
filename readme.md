@@ -127,6 +127,24 @@ The images currently in `assets/img/` that came from the original site may inclu
 - Free stock photos from [Unsplash](https://unsplash.com) or [Pexels](https://pexels.com) ✅ (free for commercial use)
 - Any photo you personally took ✅
 
+**Images confirmed safe (Brian owns these):**
+- `Brian-NZ90117-600x700-1.jpg` — professional headshot
+- `Dallas_NZ91962-600x700-1.jpg` — professional headshot (removed from team, still in folder)
+- `Steve_NZ90176-600x700-1.jpg` — professional headshot (removed from team, still in folder)
+- `IMG_9115.jpg` — iPhone photo taken by the team
+- `logo.png` — Brian's logo
+- `favicon.png` — Brian's logo
+
+**Images that need to be replaced before launch (iStock/Getty — not owned):**
+- `photo-technician-engineer.jpg` — used on CWI page hero + home slider slide 2 + services grid
+- `pipes-1920.jpg` — used on home slider slide 1 + service page banners + paving ghost page
+- `service-rafinery2.jpg` — used on Project Management page + consulting banner background
+- `service-supervisor.jpg` — used on home info section
+- `service-worker1.jpg` — used on home info section
+- `7-q5v8zsdu2iby5gy4fgzmuyz31yj0mvv189vcagad8o.jpg` — used on home info section (two workers reviewing laptop/plans)
+
+To swap any image: drop the new file into `assets/img/`, then find the old filename in the relevant HTML file and update the `src=` to match the new filename.
+
 ---
 
 ## Security & SEO Best Practices
