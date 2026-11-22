@@ -136,12 +136,18 @@ The images currently in `assets/img/` that came from the original site may inclu
 - `favicon.png` — Brian's logo
 - `natural-gas-pipeline.jpg` — Unsplash free license ✅
 - `engineers-reviewing-plans.jpg` — Unsplash free license ✅
+- `project-management.jpg` — Unsplash free license ✅
 
 **Images that need to be replaced before launch (iStock/Getty — not owned):**
 - `photo-technician-engineer.jpg` — used on CWI page hero + home slider slide 2 + services grid
-- `service-rafinery2.jpg` — used on Project Management page + consulting banner background
-- `service-supervisor.jpg` — used on home info section
-- `service-worker1.jpg` — used on home info section
+- `service-rafinery2.jpg` — used on Project Management page + consulting banner background *(replaced by project-management.jpg)*
+- `service-supervisor.jpg` — used on home info section — *"Professional team, personal approach"*
+- `service-worker1.jpg` — used on home info section — *"We're Natural Gas Specialists"*
+- `service-worker4.jpg` — used on OQ Inspections page + home services grid
+
+**Note for Brian:** The remaining images above are hard to replace with free stock photos because welding inspection is too niche. Options:
+- Check [Unsplash](https://unsplash.com) or [Pexels](https://pexels.com) using terms like "pipeline worker", "hard hat", "industrial worker", "welding"
+- Best option: take a few iPhone photos on a job site — real photos of your team are more authentic than any stock image and you own them forever
 
 To swap any image: drop the new file into `assets/img/`, then find the old filename in the relevant HTML file and update the `src=` to match the new filename.
 
